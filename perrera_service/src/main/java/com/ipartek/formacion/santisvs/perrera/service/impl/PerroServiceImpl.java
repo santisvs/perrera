@@ -115,8 +115,9 @@ public class PerroServiceImpl implements PerroService {
 		Perro p;
 		try {
 			p = daoPerro.getById(id);
+			log.debug("OK: Detalle del perro correcto. ID = " + p.getId());
 		} catch (Exception e) {
-			// TODO Log
+			log.error("Operacion detalle del objeto PerroDAO");
 			e.printStackTrace();
 			p = new Perro();
 		}
@@ -130,10 +131,11 @@ public class PerroServiceImpl implements PerroService {
 		try {
 			p = daoPerro.getById(id);
 			if (Constantes.OP_EXCEPCION != p.getId()) {
+				log.debug("OK: Operacion existe perro. ID = " + id);
 				resul = true;
 			}
 		} catch (Exception e) {
-			// TODO Log
+			log.error("Operacion existe del objeto PerroDAO");
 			e.printStackTrace();
 			p = new Perro();
 		}

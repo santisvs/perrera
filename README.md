@@ -1,7 +1,7 @@
 # Perrera
 Aplicación para gestionar perros en adopcion.
 
-La aplicacion en su primera versión v1.0.0 consiste en un proyecto principal perrera.pom (mavenizado) compuesto de los siguientes modulos:
+La aplicacion en su primera versión v1.0.1 consiste en un proyecto principal perrera.pom (mavenizado) compuesto de los siguientes modulos:
 
 1/ MODULO WEB. Proyecto perrera_web.war (Capa web + capa coontroladora (servlets))
 
