@@ -7,7 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   
-  <groupId>com.ipartek.formacion.santisvs</groupId>
+  
   <artifactId>perrera_model</artifactId>
   <name>perrera_model</name>
   <description>Capa modelo del proyecto. DAOs y POJOs para tablas.</description>

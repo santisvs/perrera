@@ -12,11 +12,9 @@
 
 	<!-- Hijos del proyecto padre -->
 	<modules>
-		<module>back_model</module>
-		<module>back_web</module>
-		<module>back_service</module>
 		<module>perrera_model</module>
 		<module>perrera_service</module>
+		<module>perrera_web</module>
 	</modules>
 
 	<properties>
@@ -69,10 +67,12 @@
 		</plugins>
 	</build>
 
+
 	<repositories>
 
 		
 		<!-- Repositorio interno de Ipartek para descargar dependencias -->
+		<!-- 
 		<repository>
 			<id>ipartek.archiva</id>
 			<name>Ipartek Archiva snapshot</name>
@@ -83,12 +83,13 @@
 				<checksumPolicy>warn</checksumPolicy>
 			</releases>
 		</repository>
-
+ 		-->
 
 	</repositories>
 
 
 	<!-- Indicar repositorio interno para hacer DEPLOY -->
+	<!-- 
 	<distributionManagement>
 		<repository>
 			<id>ipartek.archiva.snapshot</id>
@@ -96,5 +97,5 @@
 			<url>http://192.168.1.201:8084/archiva/repository/snapshots/</url>
 		</repository>
 	</distributionManagement>
-	
+	 -->
 </project>

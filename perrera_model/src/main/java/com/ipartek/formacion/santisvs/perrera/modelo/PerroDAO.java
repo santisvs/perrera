@@ -76,7 +76,7 @@ public class PerroDAO implements Persistable<Perro> {
 		boolean resul = false;
 		if (p != null) {
 			DbConnection conn = new DbConnection();
-			String sql = "{call updateReg (?)}";
+			String sql = "{call updateReg (?,?,?,?)}";
 			CallableStatement cs = conn.getConnection().prepareCall(sql);
 			cs.setInt(1, p.getId());
 			cs.setString(2, p.getNombre());
